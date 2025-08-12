@@ -1,5 +1,5 @@
 {
-    'name': 'Filtro para Ocultar Facturas en Proceso de Cancelación',
+    'name': 'Filtro para Ocultar Facturas en Proceso de Cancelación en reportes contables',
     'version': '17.0.1.0.0',
     'price': 1.0,
     'currency': 'USD',
