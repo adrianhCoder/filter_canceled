@@ -1,0 +1,36 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* filter_canceled
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-01 00:00+0000\n"
+"PO-Revision-Date: 2024-01-01 00:00+0000\n"
+"Last-Translator: Adrianh De Lucio Chavero <adrianh_coder@outlook.com>\n"
+"Language-Team: Spanish <adrianh_coder@outlook.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: filter_canceled
+#: model:ir.model.fields,field_description:filter_canceled.field_account_report__filter_hide_cancel_requested
+msgid "Hide Cancel Requested"
+msgstr "Ocultar en proceso cancelación"
+
+#. module: filter_canceled
+#: model:ir.model.fields,help:filter_canceled.field_account_report__filter_hide_cancel_requested
+msgid "If activated, hides all invoices that are in CFDI cancellation process (l10n_mx_edi_cfdi_state = 'cancel_requested')"
+msgstr "Si está activado, oculta todas las facturas que están en proceso de cancelación CFDI (l10n_mx_edi_cfdi_state = 'cancel_requested')"
+
+#. module: filter_canceled
+#: model:ir.model.fields,field_description:filter_canceled.field_account_report__filter_hide_cancel_requested
+msgid "Ocultar en proceso cancelación"
+msgstr "Ocultar en proceso cancelación"
+
+#. module: filter_canceled
+#: model:ir.model.fields,help:filter_canceled.field_account_report__filter_hide_cancel_requested
+msgid "Oculta todas las facturas que están en proceso de cancelación CFDI"
+msgstr "Oculta todas las facturas que están en proceso de cancelación CFDI"

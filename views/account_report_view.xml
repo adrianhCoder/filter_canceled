@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Extender la vista del reporte para agregar el nuevo filtro -->
+        <record id="account_report_view_form_inherit_filter_canceled" model="ir.ui.view">
+            <field name="name">account.report.form.inherit.filter.canceled</field>
+            <field name="model">account.report</field>
+            <field name="inherit_id" ref="account_reports.account_report_form"/>
+            <field name="arch" type="xml">
+                <!-- Agregar el campo en la pestaña Opciones -->
+                <xpath expr="//page[@name='page_options']" position="inside">
+                    <group>
+                        <field name="filter_hide_cancel_requested" 
+                               help="Si está activado, oculta todas las facturas que están en proceso de cancelación CFDI (l10n_mx_edi_cfdi_state = 'cancel_requested')"/>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

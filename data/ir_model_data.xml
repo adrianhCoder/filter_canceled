@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Configurar el filtro para reportes existentes -->
+        <!-- Este archivo se puede usar para habilitar el filtro en reportes específicos -->
+        
+        <!-- Ejemplo: Habilitar el filtro en el reporte de antigüedad de saldos -->
+        <!-- 
+        <record id="aged_partner_balance_report_filter_canceled" model="account.report">
+            <field name="name">Aged Partner Balance</field>
+            <field name="filter_hide_cancel_requested" eval="True"/>
+        </record>
+        -->
+        
+    </data>
+</odoo>
