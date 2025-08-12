@@ -4,7 +4,7 @@
 **Email:** adrianh_coder@outlook.com  
 **Versión:** 17.0.1.0.0  
 **Fecha:** Agosto 2025  
-**Licencia:** LGPL-3
+**Licencia:** OPL-1
 
 ## Arquitectura del Módulo
 

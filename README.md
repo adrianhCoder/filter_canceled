@@ -3,7 +3,8 @@
 **Autor:** Adrianh De Lucio Chavero  
 **Email:** adrianh_coder@outlook.com  
 **Versión:** 17.0.1.0.0  
-**Licencia:** LGPL-3
+**Licencia:** OPL-1  
+**GitHub:** https://github.com/adrianhCoder
 
 ## Descripción
 
@@ -118,4 +119,4 @@ Para reportar problemas o solicitar mejoras, contacta al equipo de desarrollo.
 
 ## Licencia
 
-Este módulo está bajo la licencia LGPL-3.
+Este módulo está bajo la licencia OPL-1.

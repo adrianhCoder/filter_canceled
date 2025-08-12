@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Filtro para Ocultar Facturas en Proceso de Cancelación</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .feature {
+            background: #f9f9f9;
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 4px solid #007bff;
+        }
+        .code {
+            background: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+        }
+        .warning {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🔍 Filtro para Ocultar Facturas en Proceso de Cancelación</h1>
+        <p><strong>Versión:</strong> 17.0.1.0.0 | <strong>Autor:</strong> Adrianh De Lucio Chavero</p>
+    </div>
+
+    <h2>📋 Descripción</h2>
+    <p>Este módulo agrega un filtro adicional en los reportes contables de Odoo 17 que permite ocultar automáticamente todas las facturas que están en proceso de cancelación CFDI (estado 'cancel_requested').</p>
+
+    <h2>✨ Características Principales</h2>
+    <div class="feature">
+        <h3>🎯 Filtro Automático</h3>
+        <p>Oculta automáticamente facturas con <code>l10n_mx_edi_cfdi_state = 'cancel_requested'</code> en todos los reportes contables.</p>
+    </div>
+
+    <div class="feature">
+        <h3>⚙️ Configuración Simple</h3>
+        <p>Activa el filtro desde la configuración de cada reporte con una simple casilla de verificación.</p>
+    </div>
+
+    <div class="feature">
+        <h3>🔄 Compatibilidad Total</h3>
+        <p>Funciona con o sin el módulo <code>l10n_mx_edi</code> instalado. Si no está disponible, el filtro se desactiva automáticamente.</p>
+    </div>
+
+    <div class="feature">
+        <h3>📊 Integración Nativa</h3>
+        <p>Se integra perfectamente con el sistema de filtros existente de Odoo, sin interferir con otros módulos.</p>
+    </div>
+
+    <h2>🚀 Instalación y Uso</h2>
+    <ol>
+        <li><strong>Instala el módulo</strong> desde Odoo Apps Store.</li>
+        <li><strong>Activa el Modo Desarrollador</strong>: Ajustes > Activar modo desarrollador.</li>
+        <li><strong>Abre un reporte contable</strong> (ej: Antigüedad de saldos).</li>
+        <li>Haz clic en el <strong>icono de engrane</strong> (configuración del reporte) para abrir el formulario de configuración del reporte.</li>
+        <li>En el formulario, entra a la pestaña <strong>Opciones</strong> y luego a la sección <strong>Filtros</strong>.</li>
+        <li>Desplázate hasta el final y marca la casilla <strong>"Ocultar en proceso cancelación"</strong>.</li>
+        <li><strong>Guarda</strong> el reporte. A partir de ahora, el filtro estará activo por defecto al abrir el reporte.</li>
+    </ol>
+
+    <h2>🔧 Estados CFDI Soportados</h2>
+    <p>El módulo filtra basándose en el campo <code>l10n_mx_edi_cfdi_state</code>:</p>
+    <ul>
+        <li><strong>✅ sent</strong> - Firmado (se muestra)</li>
+        <li><strong>❌ cancel_requested</strong> - En proceso de cancelación (se oculta)</li>
+        <li><strong>✅ cancel</strong> - Cancelado (se muestra)</li>
+        <li><strong>✅ received</strong> - Recibido (se muestra)</li>
+        <li><strong>✅ global_sent</strong> - Global firmado (se muestra)</li>
+        <li><strong>✅ global_cancel</strong> - Global cancelado (se muestra)</li>
+    </ul>
+
+    <h2>🛡️ Seguridad y Compatibilidad</h2>
+    <div class="warning">
+        <h3>⚠️ Importante</h3>
+        <p>Este módulo es <strong>completamente no invasivo</strong> y se puede instalar/desinstalar sin riesgo de corrupción de datos. Solo agrega funcionalidad nueva sin modificar comportamientos existentes.</p>
+    </div>
+
+    <h2>📞 Soporte</h2>
+    <p>Para soporte técnico, reportar problemas o solicitar mejoras:</p>
+    <ul>
+        <li><strong>Email:</strong> adrianh_coder@outlook.com</li>
+        <li><strong>GitHub:</strong> https://github.com/adrianhCoder</li>
+    </ul>
+
+    <h2>📄 Licencia</h2>
+    <p>Este módulo está bajo la licencia <strong>OPL-1</strong>.</p>
+
+    <hr>
+    <p style="text-align: center; color: #666; font-size: 0.9em;">
+        Desarrollado con ❤️ por Adrianh De Lucio Chavero
+    </p>
+</body>
+</html>

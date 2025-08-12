@@ -1,6 +1,8 @@
 {
     'name': 'Filtro para Ocultar Facturas en Proceso de Cancelación',
     'version': '17.0.1.0.0',
+    'price': 1.0,
+    'currency': 'USD',
     'category': 'Accounting',
     'summary': 'Agrega un filtro para ocultar facturas en proceso de cancelación en reportes contables',
     'description': """
@@ -14,7 +16,7 @@
         - Funciona incluso si l10n_mx_edi no está instalado (filtro inactivo)
     """,
     'author': 'Adrianh De Lucio Chavero',
-    'website': 'https://github.com/adrianh-coder',
+    'website': 'https://github.com/adrianhCoder',
     'email': 'adrianh_coder@outlook.com',
     'depends': [
         'account',
@@ -27,8 +29,11 @@
     'test': [
         'tests/test_filter_canceled.py',
     ],
+    'license': 'OPL-1',
+    'images': ['static/description/icon.png'],
+    'support': 'adrianh_coder@outlook.com',
+    'maintainer': 'Adrianh De Lucio Chavero',
     'installable': True,
     'auto_install': False,
     'application': False,
-    'license': 'LGPL-3',
 }
